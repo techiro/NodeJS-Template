@@ -4,20 +4,18 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  parser: '@typescript-eslint/parser',
+  parser: "@typescript-eslint/parser",
   parserOptions: {
-    sourceType: 'module',
+    sourceType: "module",
     tsconfigRootDir: __dirname,
-    project: ['./tsconfig.eslint.json']
+    project: ["./tsconfig.eslint.json"],
   },
-  plugins: [
-    '@typescript-eslint',
-  ],
+  plugins: ["@typescript-eslint"],
   extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "prettier",
   ],
-  rules: {
-  },
+  rules: {},
 };
